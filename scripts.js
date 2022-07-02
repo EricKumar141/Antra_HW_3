@@ -567,3 +567,13 @@ function getFunctionName(){
 console.log("29. Write a JavaScript function to get the function name.\n");
 console.log("Function Called:", "getFunctionName()" );
 console.log("Output: ", getFunctionName(), "\n");
+
+// Reducer
+      
+Array.prototype.reducer = function(arr) {
+    let count = 0;
+    for(let i = 0; i< this.length; i++){
+        count += this[i];
+    }
+    return count;
+}
